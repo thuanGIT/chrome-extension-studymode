@@ -9,3 +9,5 @@ chrome.webRequest.onBeforeRequest.addListener(
     { urls: defaultFilters },
     ["blocking"]
 );
+
+
