@@ -1,5 +1,13 @@
-chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({color: '#3aa757'}, function() {
-      console.log("The color is green.");
-    });
+const defaultFilters = [
+	"*://*.facebook.com/*",
+    "*://*.youtube.com/*",
+    "*://*.instagram.com/*"
+]
+
+chrome.webRequest.onBeforeRequest.addListener(
+    function(details) { return { cancel: true }},
+    { urls: defaultFilters },
+    ["blocking"]
+)
   });
+
