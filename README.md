@@ -1,1 +1,2 @@
 # chrome-extension-studymode
+hello
