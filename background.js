@@ -10,4 +10,3 @@ chrome.webRequest.onBeforeRequest.addListener(
     ["blocking"]
 );
 
-
