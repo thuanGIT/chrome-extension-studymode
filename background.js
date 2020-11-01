@@ -11,3 +11,4 @@ chrome.webRequest.onCompleted.addListener(
             {urls: defaultFilters}
 );
  
+
