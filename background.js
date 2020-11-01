@@ -4,8 +4,10 @@ const defaultFilters = [
     "*://*.instagram.com/*"
 ]
 
-chrome.webRequest.onBeforeRequest.addListener(
-    function(details) { return { cancel: true }},
-    { urls: defaultFilters },
-    ["blocking"]
-)
+chrome.webRequest.onCompleted.addListener(
+    function(details) {
+                chrome.tabs.executeScript({file:"content.js"},() => chrome.runtime.lastError);
+            },
+            {urls: defaultFilters}
+);
+ 
