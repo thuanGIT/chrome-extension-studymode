@@ -2,7 +2,7 @@
     "name": "StudyMode",
     "version": "1.0",
     "description": "Study better!",
-    "permissions": ["webRequest","webRequestBlocking","<all_urls>"],
+    "permissions": ["activeTab","webRequest","webRequestBlocking","<all_urls>"],
     "background": {
         "scripts": ["background.js"]
     },
