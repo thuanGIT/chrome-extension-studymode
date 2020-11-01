@@ -1,5 +1,4 @@
 # Chrome extension: Study Mode
------
 ## Description
 *   This extension allows student to avoid distraction in an online study environment.
 
