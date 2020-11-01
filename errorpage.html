@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html>
+    <head>   
+        <style>
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .button {
+              
+              background-color:rgb(211, 165, 81) ; /* Green */
+              border: none;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              border-radius: 12px;
+            }
+            .button:hover {background-color:rgb(170, 122, 34)}
+
+            .center {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 50px;
+            }
+            </style>    
+    </head>
+    <body style="background-color:rgb(246, 239, 208)">
+        
+        <p style="text-align:center;
+                  color:rgb(194, 151, 95);
+                  font-size:200%;
+                  font-family:courier;"> <b>You are blocked haha!</b></p>
+        <div>
+          <img src="icons/error.png" alt="Error Icon" style="width:500px;height:350px;" >
+        </div>
+        <p></p>
+        <p style="text-align:center;
+                  color: rgb(194, 151, 95);
+                  font-size:200%;
+                  font-family:courier;"
+                  > <b>Go back to study now!</b></p>
+        
+        <div class="center">
+          <button class="button" onclick="myFunction()"><b>Back</b></button>
+        </div>
+        <script> 
+          function myFunction() {
+            location.replace("https://www.google.com")
+          }
+        </script>
+    </body>
+  </html>
